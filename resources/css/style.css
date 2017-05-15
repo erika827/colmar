@@ -31,6 +31,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: normal;
   color: darkslategray;
+  line-height: 3rem;
 
 }
 
@@ -87,8 +88,6 @@ header {
   color: white;
 }
 
-
-
 .nav-container {
   display: inline-flex;
   justify-content: flex-end;
@@ -100,6 +99,7 @@ header {
   flex-flow: row nowrap;
   justify-content: center;
   padding-right: 1rem;
+  align-items: flex-end;
 }
 
 /* Banner Section */
@@ -212,9 +212,8 @@ header {
  .main-content {
    display: flex;
    flex-direction: column;
-
-
  }
+
 .right-main {
   border-left: 2px solid gainsboro;
 }
@@ -237,9 +236,10 @@ header {
    align-items: flex-start;
  }
 
-.event-image.first {
-  padding-top: 0;
-}
+ .event-image.first {
+   padding-top: 0;
+
+ }
 
  .event-image img {
    width: 100%;
@@ -256,6 +256,7 @@ header {
 
  .event-content p {
    padding-top: .5rem;
+   color: lightslategray;
  }
 
  .event-content span {
@@ -290,16 +291,21 @@ header {
  .courses {
    display: flex;
    flex-flow: row wrap;
+   width: 100%;
+   justify-content: center;
  }
 
  .course-box {
    display: flex;
    flex-flow: column nowrap;
    justify-content: flex-start;
-   align-content: space-between;
-   height: 18.25rem;
+
+   height: 21rem;
    width: 30%;
-   padding-right: 2rem;
+   margin-right: 2rem;
+   background-color: whitesmoke;
+   margin-bottom: 1rem;
+
 
  }
 
@@ -316,13 +322,117 @@ header {
 
  .course-title h3 {
    padding-top: 1rem;
+   padding-bottom: 1rem;
    padding-left: 1rem;
+   width: 90%;
+   font-weight: bold;
+   line-height: normal;
+
+ }
+
+ .course-content p {
+   width: 90%;
+   padding-left: 1rem;
+   padding-bottom: .5rem;
+
+ }
+
+ /* Thesis Section */
+ #thesis {
+   background-color: whitesmoke;
+     width: auto;
+     display: flex;
+     justify-content: center;
+ }
+
+ .thesis-container {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   width: 60rem;
+   height: auto;
+ }
+
+ .thesis-content {
+     display: flex;
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 2rem 1.5rem;
+     width: 60rem;
+ }
+
+ .thesis-title h2 {
+   text-align: center;
+ }
+
+ .left-thesis {
+   width: 60%;
+   color: darkslategray;
+   overflow: hidden;
+   padding-right: 1rem;
+   display: flex;
+   flex-direction: column;
+ }
+
+  .left-thesis video {
+    width: 100%;
+    height: auto;
+  }
+
+ .video-caption h3 {
+   padding-top: 1.5rem;
+
+ }
+
+ .video-caption p {
+   line-height: 1.5rem;
+   padding-top: .5rem;
+
+ }
+
+ .right-thesis {
+   border-left: 2px solid gainsboro;
+ }
+
+ /* Footer Section */
+
+ footer {
+   background-color: cadetblue;
+   height: 6rem;
+   width: auto;
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+
+ .footer-container {
+   display: inline-flex;
+   justify-content: flex-start;
+   flex-wrap: nowrap;
+   align-items: center;
+   width: 60rem;
+ }
+
+ .copyright {
    width: 100%;
  }
 
- .course-content {
-   width: 100%;
-   padding-left: 1rem;
-   padding-bottom: 1.5rem;
+ .copyright p {
+   color: white;
+ }
 
+ .privacy {
+   display: inline-flex;
+   justify-content: flex-end;
+   width: 100%;
+ }
+
+ .privacy li {
+   display: inline-flex;
+   flex-flow: row nowrap;
+
+   padding-right: 1rem;
+   color: white;
  }
