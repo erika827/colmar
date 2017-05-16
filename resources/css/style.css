@@ -41,14 +41,27 @@ p {
 }
 
 
+@media only screen and (max-width: 850px) {
+  body {
+    font-size: 12px;
+  }
 
+  .logo img {
+    height: 1.5rem;
+  }
 
-@media only screen and (max-width: 480px) {
+  .name h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
   .desktop {
     display: none;
   }
   .mobile {
-    display: flex;
+    display: block;
   }
 }
 
@@ -91,7 +104,13 @@ header {
 .nav-container {
   display: inline-flex;
   justify-content: flex-end;
-  width: 100%;
+  width: 60rem;
+}
+
+.nav-container ul {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
 .nav-container li {
@@ -101,6 +120,35 @@ header {
   padding-right: 1rem;
   align-items: flex-end;
 }
+
+@media only screen and (max-width: 680px) {
+
+  header {
+    justify-content: center;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .nav-container {
+    width: 100%;
+  }
+
+  nav.mobile {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .mobile ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+
+  }
 
 /* Banner Section */
 
@@ -165,6 +213,45 @@ header {
    padding-bottom: 1rem;
  }
 
+ @media only screen and (max-width: 680px) {
+
+   .banner-container {
+     flex-direction: column;
+     padding: 0;
+     width: 60rem;
+   }
+
+   .banner-image {
+     width: 100%;
+     height: 15rem;
+     background-color: gainsboro;
+
+   }
+
+   .banner-image img {
+     display: none;
+   }
+
+   .banner-content {
+     width: 90%;
+     padding-left: 1.5rem;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+   }
+
+   .banner-button {
+     width: 90%;
+     margin-bottom: 1rem;
+     padding-top: .75rem;
+     padding-bottom: .75rem;
+   }
+
+   .banner-button span {
+     font-size: 1.2rem;
+   }
+
+ }
+
  /* Main Section */
 
  #main {
@@ -176,7 +263,6 @@ header {
 
  .main-container {
    display: flex;
-   z-index: 1;
    align-items: flex-start;
    justify-content: flex-start;
    padding: 2rem 1.5rem;
@@ -267,6 +353,75 @@ header {
    border-bottom: 0px;
  }
 
+@media only screen and (max-width: 680px) {
+
+  .main-container {
+    display: flex;
+    width: 100%;
+  }
+
+
+  .right-main {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border: none;
+  }
+
+  .event-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+
+  }
+
+
+.event-content {
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+
+}
+  .event-image img {
+    display: none;
+  }
+
+.event-image-wide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .event-image-wide img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .event-content h3 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .event-content p {
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+
+  }
+}
+
  /* Learning Section */
 
  #learning {
@@ -299,7 +454,6 @@ header {
    display: flex;
    flex-flow: column nowrap;
    justify-content: flex-start;
-
    height: 21rem;
    width: 30%;
    margin-right: 2rem;
@@ -337,31 +491,60 @@ header {
 
  }
 
+ @media only screen and (max-width: 680px) {
+
+
+   .course-box {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: flex-start;
+     height: 4rem;
+     width: 90%;
+     margin-right: 0rem;
+     background-color: whitesmoke;
+     margin-bottom: 1rem;
+}
+
+   .course-title h3 {
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     padding-left: 1rem;
+     width: 90%;
+     font-weight: bold;
+     line-height: normal;
+   }
+ }
+
  /* Thesis Section */
  #thesis {
    background-color: whitesmoke;
      width: auto;
      display: flex;
      justify-content: center;
+     align-content: center;
  }
 
  .thesis-container {
-   padding-top: 2rem;
-   padding-bottom: 2rem;
+   padding: 2rem 1.5rem;
    width: 60rem;
    height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ .thesis-title h2 {
+   text-align: center;
  }
 
  .thesis-content {
      display: flex;
      align-items: flex-start;
-     justify-content: flex-start;
+     justify-content: center;
      padding: 2rem 1.5rem;
-     width: 60rem;
- }
-
- .thesis-title h2 {
-   text-align: center;
+     width: auto;
  }
 
  .left-thesis {
@@ -391,13 +574,39 @@ header {
 
  .right-thesis {
    border-left: 2px solid gainsboro;
+
+ }
+
+ .right-thesis .event-container {
+   max-width: 80%;
+ }
+
+ @media only screen and (max-width: 680px) {
+   .thesis-content {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+
+ }
+
+ .left-thesis {
+   width: 100%;
+   padding-right: 0rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+
  }
 
  /* Footer Section */
 
  footer {
    background-color: cadetblue;
-   height: 6rem;
+   height: 4rem;
    width: auto;
    padding-left: 1.5rem;
    padding-right: 1.5rem;
@@ -409,9 +618,9 @@ header {
 
  .footer-container {
    display: inline-flex;
-   justify-content: flex-start;
-   flex-wrap: nowrap;
+   justify-content: center;
    align-items: center;
+   flex-wrap: nowrap;
    width: 60rem;
  }
 
@@ -432,7 +641,14 @@ header {
  .privacy li {
    display: inline-flex;
    flex-flow: row nowrap;
-
+   align-content: center;
+   justify-content: flex-end;
    padding-right: 1rem;
    color: white;
+ }
+
+ @media only screen and (max-width: 680px){
+   .footer-container {
+     display: block;
+   }
  }
