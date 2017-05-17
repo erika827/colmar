@@ -14,6 +14,11 @@ nav {
   color: white;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -41,7 +46,7 @@ p {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 780px) {
   body {
     font-size: 12px;
   }
@@ -121,6 +126,11 @@ header {
   align-items: flex-end;
 }
 
+.nav-container a:hover {
+  color: darkslategray;
+  transition: color 150ms;
+}
+
 @media only screen and (max-width: 680px) {
 
   header {
@@ -198,6 +208,13 @@ header {
   width: 100%;
   color: white;
 }
+
+.banner-button:hover {
+  background-color: cadetblue;
+  transition: all 150ms;
+}
+
+
 
 .banner-title {
   margin-top: 1rem;
@@ -313,6 +330,11 @@ header {
    background-color: whitesmoke;
  }
 
+.event-container:hover {
+  background-color: gainsboro;
+  transition: background-color 200ms;
+}
+
  .event-image {
    width: 35%;
    height: auto;
@@ -345,7 +367,7 @@ header {
    color: lightslategray;
  }
 
- .event-content span {
+ .event-content a {
    color: cadetblue;
  }
 
@@ -481,8 +503,16 @@ align-items: center;
    width: 90%;
    font-weight: bold;
    line-height: normal;
-
  }
+
+.course-title a {
+  color: darkslategray;
+}
+
+.course-title a:hover {
+  color: cadetblue;
+  transition: color 150ms;
+}
 
  .course-content p {
    width: 90%;
@@ -645,6 +675,11 @@ align-items: center;
    justify-content: flex-end;
    padding-right: 1rem;
    color: white;
+ }
+
+ .privacy a:hover {
+   color: darkslategray;
+   transition: color 150ms;
  }
 
  @media only screen and (max-width: 680px){
